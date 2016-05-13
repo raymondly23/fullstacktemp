@@ -1,9 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-const routes = require('./config/routes')
-const Main = require('./components/main')
+import Routes from './config/routes'
 
-ReactDOM.render(
-      <Router>
-        <Route path='/' component={Main}/>
-      </Router>, document.getElementById('app'))
+ReactDOM.render(Routes, document.getElementById('app'))
